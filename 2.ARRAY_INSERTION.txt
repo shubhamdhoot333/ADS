@@ -1,0 +1,31 @@
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+int arr[100],n,i,num,loc;
+clrscr();
+printf("enter the size of array");
+scanf("%d",&n);
+printf("ener the element of array");
+for(i=0;i<n;i++)
+{
+scanf("%d",&arr[i]);
+}
+printf("enter the inserted number ");
+scanf("%d",&num);
+printf("enter the position");
+scanf("%d",&loc);
+for(i=n-1;i>=loc;i--)
+{
+ arr[i+1]=arr[i];
+}
+arr[loc]=num;
+n=n+1;
+printf("insert after array");
+for(i=0;i<n;i++)
+{
+printf("%d",arr[i]);
+printf("\n");
+}
+getch();
+}

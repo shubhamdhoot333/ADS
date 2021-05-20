@@ -1,0 +1,21 @@
+
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+int arr[100],n,i;
+clrscr();
+printf("enter the size of array");
+scanf("%d",&n);
+printf("ener the element of array");
+for(i=0;i<n;i++)
+{
+scanf("%d",&arr[i]);
+}
+for(i=0;i<n;i++)
+{
+printf("%d",arr[i]);
+printf("\n");
+}
+getch();
+}

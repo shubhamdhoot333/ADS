@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+	typedef struct student
+	{
+		int real;
+		int image;
+	 }complex;
+	 complex c1,c2,sum,sub;
+	 int option;
+	 do{
+		printf("1.read");
+		printf("2.display");
+		printf("3.add");
+		printf("4.substract");
+		printf("5.exuit");
+		printf("enter your choice");
+		scanf("%d",&option);
+		switch(option)
+		{
+		case 1:
+			printf("enter real and imaginary part of number");
+			scanf("%d %d",&c1.real,&c1.image);
+			printf("enter real and imaginary part of number2");
+			scanf("%d %d",&c2.real,&c2.image);
+			break;
+		case 2:
+			printf("first complex number is %d%d",c1.real,c1.image);
+			printf("second complex number is %d %d",c2.real,c2.image);
+			break;
+		case 3:
+			sum.real=c1.real+c2.real;
+			sum.image=c1.image+c2.image;
+			printf("sum is %d+%di",sum.real,sum.image);
+			break;
+		case 4:
+			sub.real=c1.real-c2.real;
+			sub.image=c1.image-c2.image;
+			printf("sub is %d+%di",sub.real,sub.image);
+			break;
+
+
+		}
+	 } while(option!=5);
+
+getch();
+}

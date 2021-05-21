@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+	struct student
+	{
+		int rollno;
+		char name[100];
+		float fees;
+		char dob[100];
+	};
+	struct student stud1;
+	printf("enter rollno");
+	scanf("%d",&stud1.rollno);
+	printf("enter name");
+	scanf("%s",&stud1.name);
+	printf("enter fee");
+	scanf("%f",&stud1.fees);
+	printf("enter dob");
+	scanf("%s",&stud1.dob);
+	printf("%d \n",stud1.rollno);
+	puts(stud1.name);
+	printf("%f \n",stud1.fees);
+	puts(stud1.dob);
+
+
+getch();
+}

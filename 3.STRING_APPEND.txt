@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	char str[100],str1[100],i=0,j=0,length;
+	printf("enter the string1");
+	gets(str);
+	printf("enter the string2");
+	gets(str1);
+	while(str1[i]!='\0')
+	{
+	 i++;
+	}
+	while(str[j]!='\0')
+	{
+	str1[i]=str[j];
+	i++;
+	j++;
+	}
+	str1[i]='\0';
+	printf("string after append");
+	puts(str1);
+	getch();
+}

@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+char str[100],i=0,length;
+printf("Eenter the string");
+gets(str);
+while(str[i]!='\0')
+{
+i++;
+}
+length=i;
+printf("%s",str);
+printf("length of string %d",length);
+getch();
+}

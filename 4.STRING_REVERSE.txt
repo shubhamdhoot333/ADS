@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+	clrscr();
+	char str[100],i=0,j=0,temp;
+	printf("enter the string1");
+	gets(str);
+	j=strlen(str)-1;
+	while(i<j)
+	{
+	temp=str[j];
+	str[j]=str[i];
+	str[i]=temp;
+	i++;
+	j--;
+	}
+	printf("string after reverse");
+	puts(str);
+	//BY USE INBUILT METHOD
+	puts(strrev(str));
+	getch();
+}#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+	clrscr();
+	char str[100],i=0,j=0,temp;
+	printf("enter the string1");
+	gets(str);
+	j=strlen(str)-1;
+	while(i<j)
+	{
+	temp=str[j];
+	str[j]=str[i];
+	str[i]=temp;
+	i++;
+	j--;
+	}
+	printf("string after reverse");
+	puts(str);
+	//BY USE INBUILT METHOD
+	puts(strrev(str));
+	getch();
+}

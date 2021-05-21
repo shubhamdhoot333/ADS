@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	char str[100],upper_str[100],i=0,length;
+	printf("Eenter the string");
+	gets(str);
+	while(str[i]!='\0')
+	{
+		if(str[i]>='a' && str[i]<='z')
+		{
+		upper_str[i]=str[i]-32;
+		}
+		else
+		{
+		upper_str[i]=str[i];
+		}
+		i++;
+	}
+	upper_str[i]='\0';
+	printf("string converted into upper case");
+	puts(upper_str);
+	getch();
+}

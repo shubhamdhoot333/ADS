@@ -1,0 +1,29 @@
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+
+int arr1[100][100],i,j,row,col;
+clrscr();
+printf("enter the size of row");
+scanf("%d",&row);
+printf("enter the size of column");
+scanf("%d",&col);
+printf("enter the element of array1");
+for(i=0;i<row;i++)
+{
+for(j=0;j<col;j++)
+{
+scanf("%d",&arr1[i][j]);
+}
+}
+for(i=0;i<row;i++)
+{
+for(j=0;j<col;j++)
+{
+printf("%d",arr1[i][j]);
+}
+printf("\n");
+}
+getch();
+}

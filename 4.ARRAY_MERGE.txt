@@ -1,0 +1,41 @@
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+
+int arr1[100],arr2[100],arr3[200],n1,n2,n3,i,j,loc,num,index=0;
+clrscr();
+printf("enter the size of array1");
+scanf("%d",&n1);
+printf("enter the size of array2");
+scanf("%d",&n2);
+printf("enter the element of array1");
+for(i=0;i<n1;i++)
+{
+scanf("%d",&arr1[i]);
+}
+printf("enter the element of array2");
+for(j=0;j<n2;j++)
+{
+scanf("%d",&arr2[j]);
+}
+n3=n1+n2;
+printf("merge after array ");
+for(i=0;i<n1;i++)
+{
+ arr3[index]=arr1[i];
+ index++;
+}
+for(j=0;j<n2;j++)
+{
+	arr3[index]=arr2[j];
+	index++;
+}
+for(i=0;i<n3;i++)
+{
+printf("%d",
+arr3[i]);
+printf("\n");
+}
+getch();
+}
